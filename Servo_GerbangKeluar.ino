@@ -2,9 +2,9 @@
 #include <PubSubClient.h>
 #include <Servo.h>
 
-const char* ssid = "RPI";  //SSID Wifi 
-const char* password = "biasanyaapa"; //"elektropetra";  //Password Wifi
-const char* mqtt_server = "192.168.1.100";  // Alamat Broker
+const char* ssid = "XXXX";  //SSID Wifi 
+const char* password = "XXXX"; //"elektropetra";  //Password Wifi
+const char* mqtt_server = "192.168.xxx.xxx";  // Alamat Broker
 
 int servo_pin = D0 ;
 //int BUTTON_PIN = D2;
@@ -73,7 +73,7 @@ void reconnect() {
     if (client.connect(clientId.c_str()))
     {
       Serial.println("connected");
-      client.subscribe("parkir/pintuKeluar"); //Topik MQTT yang di Subscribe
+      client.subscribe("yuhu"); //Topik MQTT yang di Subscribe
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
