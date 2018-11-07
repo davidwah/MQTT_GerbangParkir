@@ -3,7 +3,7 @@
 #include <Servo.h>
 
 const char* ssid = "XXXX";  //SSID Wifi 
-const char* password = "XXXX"; //"elektropetra";  //Password Wifi
+const char* password = "XXXX";  //Password Wifi
 const char* mqtt_server = "192.168.xxx.xxx";  // Alamat Broker
 
 int servo_pin = D0 ;
